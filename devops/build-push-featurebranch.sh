@@ -24,5 +24,6 @@ docker build $DOCKER_TAGS_ARGS --build-arg VER=${VER} --build-arg BUILD_TIMESTAM
 for DOCKER_TAG in "${DOCKER_TAGGED_BUILDS[@]}"
 do
   echo pushing "$DOCKER_TAG"
-  docker push "$DOCKER_TAG"
+  #TODO: 
+  # docker push "$DOCKER_TAG"
 done

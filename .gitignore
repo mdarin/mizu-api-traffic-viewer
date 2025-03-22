@@ -60,3 +60,4 @@ ui/up9-mizu-common-0.0.0.tgz
 
 # Object files
 *.o
+.aider*
