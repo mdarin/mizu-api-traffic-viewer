@@ -50,7 +50,7 @@ func (e *BasenineEntryInserter) Insert(entry *api.Entry) error {
 	return nil
 }
 
-func initializeConnection() *basenine.Connection{
+func initializeConnection() *basenine.Connection {
 	for {
 		connection, err := basenine.NewConnection(shared.BasenineHost, shared.BaseninePort)
 		if err != nil {
