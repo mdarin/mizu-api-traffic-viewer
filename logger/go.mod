@@ -1,5 +1,5 @@
 module github.com/up9inc/mizu/logger
 
-go 1.17
+go 1.24.1
 
-require github.com/op/go-logging v0.0.0-20160315200505-970db520ece7
+require github.com/mdarin/go-logging v0.0.2

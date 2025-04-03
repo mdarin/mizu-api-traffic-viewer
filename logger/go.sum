@@ -1,2 +1,2 @@
-github.com/op/go-logging v0.0.0-20160315200505-970db520ece7 h1:lDH9UUVJtmYCjyT0CI4q8xvlXPxeZ0gYCVvWbmPlp88=
-github.com/op/go-logging v0.0.0-20160315200505-970db520ece7/go.mod h1:HzydrMdWErDVzsI23lYNej1Htcns9BCg93Dk0bBINWk=
+github.com/mdarin/go-logging v0.0.2 h1:7f2kXtsiQdVds4dTLUFtefSn2r6Z1JONH9hXg3kQPpA=
+github.com/mdarin/go-logging v0.0.2/go.mod h1:/5JpcSGVIVXfnEL+0zGU9A85N7yhtvBX/I2jATOntzQ=

@@ -3,7 +3,7 @@ package logger
 import (
 	"os"
 
-	"github.com/op/go-logging"
+	"github.com/mdarin/go-logging"
 )
 
 var Log = logging.MustGetLogger("mizu")

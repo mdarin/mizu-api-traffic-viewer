@@ -1,6 +1,6 @@
 module github.com/up9inc/mizu/cli
 
-go 1.17
+go 1.24.1
 
 require (
 	github.com/creasty/defaults v1.5.2
@@ -57,6 +57,7 @@ require (
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/liggitt/tabwriter v0.0.0-20181228230101-89fcab3d43de // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
+	github.com/mdarin/go-logging v0.0.2 // indirect
 	github.com/mitchellh/go-wordwrap v1.0.1 // indirect
 	github.com/moby/spdystream v0.2.0 // indirect
 	github.com/moby/term v0.0.0-20210619224110-3f7ff695adc6 // indirect
