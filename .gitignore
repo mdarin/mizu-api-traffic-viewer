@@ -54,9 +54,11 @@ tap/extensions/*/expect
 **/dist/**
 *.editorconfig
 ui/up9-mizu-common-0.0.0.tgz
+site
 
 # Ignore *.log files
 *.log
 
 # Object files
 *.o
+.aider*

@@ -14,6 +14,12 @@ if [[ $ARCH == "aarch64" || $ARCH == "arm64" ]]; then
     BPF_CFLAGS="-O2 -g -D__TARGET_ARCH_arm64"
 fi
 
+#* INFO:
+# This does not affect normal use
+# Just add: "-Wno-incompatible-pointer-types" flag
+# https://github.com/apache/pulsar/issues/6040
+BPF_CFLAGS="$BPF_CFLAGS -Wno-incompatible-pointer-types"
+
 docker run --rm \
 	--name mizu-ebpf-builder \
 	-v $MIZU_HOME:/mizu \

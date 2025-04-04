@@ -4,7 +4,7 @@
 set -e
 
 dst_folder=$1
-echo "dst folder: $dst_folder";
+echo "dst folder: $dst_folder"
 
 cd $dst_folder/../ui-common
 npm i

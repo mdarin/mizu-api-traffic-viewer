@@ -14,6 +14,7 @@ import (
 )
 
 func CleanUpMizuResources(ctx context.Context, cancel context.CancelFunc, kubernetesProvider *kubernetes.Provider, isNsRestrictedMode bool, mizuResourcesNamespace string) {
+	// TODO: add spinner
 	logger.Log.Infof("\nRemoving mizu resources")
 
 	var leftoverResources []string

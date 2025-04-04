@@ -1,0 +1,1 @@
+../devops/install-capstone.sh
