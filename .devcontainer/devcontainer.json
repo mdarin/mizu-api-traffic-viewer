@@ -26,7 +26,12 @@
 				"foxundermoon.shell-format",
 				"redhat.vscode-yaml",
 				"jeff-hykin.better-dockerfile-syntax",
-				"aaron-bond.better-comments"
+				"aaron-bond.better-comments",
+				"tooltitudeteam.tooltitude",
+				"mohamed-nouri.websocket-client",
+				"ms-vscode.makefile-tools",
+				"fabiospampinato.vscode-diff",
+				"vivaxy.vscode-conventional-commits"
 			]
 		}
 	},
@@ -35,7 +40,7 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "bash install-dependencies.sh"
+	"postCreateCommand": "bash .devcontainer/install-dependencies.sh"
 	// Configure tool-specific properties.
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"

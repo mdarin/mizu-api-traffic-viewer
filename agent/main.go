@@ -103,6 +103,7 @@ func hostApi(socketHarOutputChannel chan<- *tapApi.OutputChannelItem) *gin.Engin
 
 	ginApp.Use(disableRootStaticCache())
 
+	// TODO: get from conf and/or from cmd args
 	staticFolder := "./site"
 	indexStaticFile := staticFolder + "/index.html"
 	if err := setUIFlags(indexStaticFile); err != nil {

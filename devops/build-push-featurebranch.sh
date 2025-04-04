@@ -2,11 +2,11 @@
 set -e
 
 GCP_PROJECT=up9-docker-hub
-REPOSITORY=gcr.io/$GCP_PROJECT
+REPOSITORY=mdarin #gcr.io/$GCP_PROJECT
 SERVER_NAME=mizu
 GIT_BRANCH=$(git branch | grep \* | cut -d ' ' -f2 | tr '[:upper:]' '[:lower:]')
 
-DOCKER_REPO=$REPOSITORY/$SERVER_NAME/$GIT_BRANCH
+DOCKER_REPO=$REPOSITORY/$SERVER_NAME-$GIT_BRANCH
 VER=${VER=0.0}
 
 DOCKER_TAGGED_BUILDS=("$DOCKER_REPO:latest" "$DOCKER_REPO:$VER")
@@ -23,5 +23,5 @@ docker build $DOCKER_TAGS_ARGS --build-arg VER=${VER} --build-arg BUILD_TIMESTAM
 for DOCKER_TAG in "${DOCKER_TAGGED_BUILDS[@]}"; do
   echo pushing "$DOCKER_TAG"
   #TODO:
-  # docker push "$DOCKER_TAG"
+  docker push "$DOCKER_TAG"
 done
